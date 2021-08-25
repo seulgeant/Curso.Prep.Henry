@@ -232,13 +232,12 @@ function esVocal(letra){
   if (letra.length!==1){
     return 'Dato incorrecto';
   } 
-  if (letra==='a'||'e'||'ì'||'o'||'u'||'A'||'E'||'I'||'O'||'U'){
+  if(letra ==='a'||letra==='e'||letra==='i'||letra === 'o' || letra === 'u'){
     return 'Es vocal';
   }else {
   return 'Dato incorrecto';
-  } 
+  }
 }
-
 
 
 
