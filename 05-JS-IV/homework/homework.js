@@ -30,14 +30,15 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  objeto.metodo;
+  objeto[metodo]
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-return 5 * objetoMisterioso.numeroMisterioso;
+a=5*objetoMisterioso.numeroMisterioso;
+return a;
 
 }
 
@@ -81,7 +82,7 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (objeto[propiedad]==propiedad){
+  if (objeto[propiedad]){
     return true;
   }else {
     return false;
@@ -94,7 +95,7 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  if (password===usuario[password]){
+  if (password===usuario.password){
     return true;
   }
   else {
@@ -125,7 +126,7 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  for (i=0;i<usuario.length;i++){
+  for (i=0;i<usuarios.length;i++){
   usuarios[usuario(i)].esPremium=true;
   }
   return i;
